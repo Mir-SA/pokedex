@@ -123,10 +123,7 @@ describe("<PokemonPage />", () => {
       "/pokemon/ditto"
     );
     // eslint-disable-next-line
-    expect(screen.getByText("Next")).toHaveAttribute(
-      "href",
-      "/pokemon/vaporeon"
-    );
+    expect(screen.getByText("Next")).toHaveAttribute("href", "/pokemon/ditto");
   });
 
   it("should not render previous and next urls if none exist", async () => {
